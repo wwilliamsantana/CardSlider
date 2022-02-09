@@ -15,6 +15,18 @@ body {
   background: #f2f2f2;
 }
 
+section {
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper {
+  width: 950px;
+}
+
 section .card .image {
   width: 140px;
   height: 140px;
@@ -36,7 +48,6 @@ section .card .image img {
   background: #fff;
   border-radius: 20px;
   margin: 20px 0;
-  width: 280px;
 }
 
 .card::before {
@@ -129,4 +140,24 @@ section .card .image img {
 
 .card .button button:hover {
   background: #6616d0;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #7d2ae8;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: #7d2ae8;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev {
+  opacity: 1;
+  color: #7d2ae8;
 }
