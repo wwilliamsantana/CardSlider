@@ -42,7 +42,7 @@ section .card .image img {
 .card::before {
   content: ' ';
   position: absolute;
-  height: 55%;
+  height: 40%;
   width: 100%;
   background: #7d2ae8;
   border-radius: 20px 20px 0 0;
@@ -106,4 +106,27 @@ section .card .image img {
   color: #7d2ae8;
   font-size: 18px;
   margin: 0 2px;
+}
+
+.card .button {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card .button button {
+  background: #7d2ae8;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .button button:hover {
+  background: #6616d0;
 }
